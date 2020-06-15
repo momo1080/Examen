@@ -1,0 +1,342 @@
+@font-face {
+  font-family: "Pinyon";
+  src: url("./media_candidats/fonts/Pinyon_Script/PinyonScript-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url("./media_candidats/fonts/Lora/Lora-Regular.ttf");
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Lora";
+  box-sizing: border-box;
+}
+input {
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  color: #382c41;
+}
+
+header {
+  height: 250px;
+  background: url("./images/header.jpg") no-repeat top left;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  text-align: center;
+  color: white;
+  font-family: "Pinyon";
+  font-size: 5rem;
+}
+
+nav {
+  border-bottom: solid 2px #382c41;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 50px;
+  padding: 5px 0 10px 0;
+  font-family: "Anton", sans-serif;
+  border-top: solid 5px transparent;
+}
+
+nav ul li:hover {
+  border-top: solid 5px #382c41;
+}
+
+nav ul li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+
+form input[type="text"] {
+  padding: 7px;
+  font-size: 0.8rem;
+  border: none;
+  width: 205px;
+  background: #4b4b4b;
+  color: #c2bcc7;
+}
+
+form input[type="text"]::placeholder {
+  color: #c2bcc7;
+}
+
+input[type="image"] {
+  height: 25px;
+  vertical-align: middle;
+}
+
+/* images 190 */
+
+hr {
+  height: 10px;
+  border: none;
+  background: #382c41;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cont {
+  max-width: 980px;
+  margin: auto;
+}
+
+.soustitre {
+  padding: 30px 0 20px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container .card {
+  width: 22%;
+  min-width: 250px;
+  background: white;
+  margin-bottom: 35px;
+}
+
+.container .card p {
+  margin-top: 15px;
+}
+
+.container .card img {
+  width: 100%;
+}
+
+footer .flex {
+  justify-content: flex-start;
+}
+
+.socials {
+  justify-content: flex-end;
+}
+
+.socials img {
+  margin-left: 15px;
+}
+
+.responsive {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .responsive {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  .responsive img {
+    height: 35px;
+    width: auto;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+
+  footer .flex {
+    display: block;
+    text-align: center;
+  }
+
+  #nav {
+    position: fixed;
+    top: 0;
+    left: -75vw;
+    height: 100vh;
+    width: 75vw;
+    background-color: white;
+    flex-direction: column;
+    padding-left: 0;
+    justify-content: flex-start;
+    transition: all 0.25s ease-in-out;
+  }
+
+  #nav.active {
+    left: 0;
+  }
+
+  #nav.active #form {
+    display: none;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 30px 0;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  form input {
+    padding: 15px 10px 15px 45px;
+    font-size: 1rem;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+  }
+}

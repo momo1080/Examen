@@ -1,0 +1,20 @@
+Vous trouverez dans le dossier le fichier 
+ - accueil_fringue.psd
+ - index.html
+
+ "dossier candidats"
+     - "dossier fonts"
+
+
+
+Partie 1 à faire : 
+ - Installer les polices sur votre ordinateur
+ - Exporter les icônes : Loupe, et les icône des réseaux sociaux depuis la maquette "accueil_fringue.psd"
+
+Partie 2 :
+ - Faire la maquette pour le media queries maxi 480px; Il faudra intégré l'icône pannier que vous aurez au préalable créer sous illustrator.
+
+
+Partie 3 : 
+ - Finir l'intégration et le css de la maquette desktop container de 980px;
+ - Faire le css du responsive maxi 480px en respectant votre maquette.
